@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>投稿新闻</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">校园新闻</div>
+        <nav>
+          <a href="index.html">首页</a>
+          <a href="submit.html">投稿</a>
+          <a href="admin.html">审核</a>
+        </nav>
+        <a class="btn ghost" href="index.html">返回首页</a>
+      </div>
+    </header>
+
+    <main class="container form-wrap">
+      <div class="panel">
+        <h2>投稿新闻</h2>
+        <form id="submitForm">
+          <div class="field">
+            <label for="title">标题</label>
+            <input id="title" name="title" type="text" required />
+          </div>
+
+          <div class="field">
+            <label for="summary">摘要</label>
+            <textarea id="summary" name="summary" rows="3" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="content">正文</label>
+            <textarea id="content" name="content" rows="8" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="image">自定义配图</label>
+            <input id="image" name="image" type="file" accept="image/*" />
+          </div>
+
+          <div class="action-row">
+            <button class="btn primary" type="submit">提交审核</button>
+          </div>
+
+          <p id="formMessage" class="message"></p>
+        </form>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+      bindSubmitForm();
+    </script>
+  </body>
+</html>

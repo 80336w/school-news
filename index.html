@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>校园新闻</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">校园新闻</div>
+        <nav>
+          <a href="index.html">首页</a>
+          <a href="submit.html">投稿</a>
+          <a href="admin.html">审核</a>
+        </nav>
+        <a class="btn primary" href="submit.html">投稿新闻</a>
+      </div>
+    </header>
+
+    <main class="container page">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Campus News</p>
+          <h1>学校新闻</h1>
+          <p class="subtitle">
+            关注校园动态、活动新闻与最新资讯。
+          </p>
+        </div>
+      </section>
+
+      <section class="grid" id="newsList"></section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+      renderHomePage();
+    </script>
+  </body>
+</html>
